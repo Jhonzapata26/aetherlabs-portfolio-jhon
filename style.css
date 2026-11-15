@@ -194,18 +194,18 @@ section {
 }
 #skills {
   text-align: center;
-  padding: 60px 250px;
+  padding: 60px 5px;
 }
 .skills-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
   max-width: 900px;
-  margin: 0;
+  margin: 0 auto;
   justify-items: center;
 }
-#skills .frontend
-#skills .backend
+#skills .frontend,
+#skills .backend,
 #skills .tecnologias {
   text-align: center;
 }
@@ -334,7 +334,8 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  width: 100% + max-width;
+  width: 100%;
+  max-width: 400px;
 }
 button {
   display: flex;
@@ -359,7 +360,8 @@ label {
   padding: 50px;
 }
 .form-input {
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
 }
 .social-links {
   padding: 20px;

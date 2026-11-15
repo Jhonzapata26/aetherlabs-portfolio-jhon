@@ -193,27 +193,49 @@ section {
   font-weight: bold;
 }
 #skills {
+  text-align: center;
+  padding: 60px 250px;
+}
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  max-width: 900px;
+  margin: 0;
+  justify-items: center;
+}
+#skills .frontend
+#skills .backend
+#skills .tecnologias {
+  text-align: center;
+}
+
+#skills .section-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+#skills li {
   display: flex;
-  justify-content: space-between;
-  background-color: var(--card-bg);
-  border-radius: 20px;
-  margin: 30px;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+  justify-content: flex-start;
 }
-.front {
-  margin-bottom: 50px;
+#skills ul {
+  list-style: none;
+  padding: 0;
+  display: inline-block;
+  text-align: left;
 }
-.back {
-  margin-bottom: 50px;
-}
-.tech {
-  margin-bottom: 50px;
-}
-ul {
-  color: var(--primary-color)
-}
-.skills-hero {
+#skills-hero {
   margin: 40px;
   font-size: 40px;
+}
+#skills li i {
+  color: var(--primary-color);
+  font-size: 24px;
+  width: 24px;
+  text-align: center;
 }
 .projects-container {
   display: flex;
@@ -410,5 +432,9 @@ label {
 
   .nav-links a:last-child {
     border-bottom: none;
+  }
+  .skills-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
   }
 }
